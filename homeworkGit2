@@ -1,0 +1,59 @@
+1. На локальном репозитории сделать ветки для:
+- Postman
+- Jmeter
+- CheckLists
+- Bugreports
+- SQL
+- Charles
+- Mobiletesting
+git branch Postman
+git branch Jmeter
+git branch CheckLists
+git branch Bugreports
+git branch SQL
+git branch Charles
+git Mobiletesting
+2. Запушить все ветки на внешний репозиторий
+git push origin --all
+3. В ветке Bugreports сделать текстовый документ со структурой баг репорта
+а)Перейти в ветку Bugrepors
+б) Выполнить команду cat > bugreports.txt
+"Id": "serial number",
+"Title":"Name of the report",
+"Steps to reproduce": "Way,how to localize a bug",
+"Actual result": "Current result",
+"Expected result" :"Result, which is written in the requirements",
+"Severity": "How much the bug affects  to the system",
+"Priority": "How urgent is the bug to be fixed",
+"Environment": "Version of operation system",
+"Assigne": "Team member to whom the bug is assigned", 
+"Attachments":" Photo or video of the bug"
+в) Нажать(ctr+c)
+4. Запушить структуру багрепорта на внешний репозиторий
+git add bugreport.txt
+git commit -m "commit changes bugreport.txt"
+git push
+5. Вмержить ветку Bugreports в main
+a)Перейти на веточку main( git checkout main)
+б)Выполнить команду(git merge Bugreports)
+6. Запушить main на внешний репозиторий.
+git push -u origin main
+7. В ветке CheckLists набросать структуру чек листа
+a) Перейти в ветку Checklists(git checkout Checklists)
+b) Выбрать команду (cat  > checklists.txt)
+Id: 
+Title:
+Steps to reptoduce:
+Expected result:
+Status: Pass/Fail.
+в) Нажать(ctr+c)
+8. Запушить структуру на внешний репозиторий
+git add checklists.txt
+git commit -m "commit changes bugreport.txt"
+git push
+9. На внешнем репозитории сделать Pull Request ветки CheckLists в main
+а)Перейти на внешний репозиторий 
+б)Выполнить команду(New pull request) 
+в)Create pull request
+10. Синхронизировать Внешнюю и Локальную ветки Main
+git pull
