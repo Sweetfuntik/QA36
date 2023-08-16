@@ -1,0 +1,52 @@
+
+1) Посмотреть где я
+pwd
+2) Создать папку:
+mkdir Git 
+3) Зайти в папку:
+cd Git
+4) Создать 3 папки:
+mkdir papka1 papka2 papka3
+5) Зайти в любую папку:
+cd papka1
+6) Создать 5 файлов (3 txt, 2 json):
+touch lesson1.txt lesson2.txt lesson3.txt lesson4.json lesson5.json
+7) Создать 3 папки:
+mkdir p1 p2 p3
+8. Вывести список содержимого папки:
+ls -la
+9) + Открыть любой txt файл:
+cat > 'название файла'
+10) + написать туда что-нибудь, любой текст:
+cat >lesson1.txt 
+name: Vladimir
+age: 38
+salary: 500 y.e
+city: Odessa
+11) + сохранить и выйти:
+ctrl+ c
+12)Выйти из папки на уровень выше:
+cd ..
+13)Переместить любые 2 файла, которые вы создали, в любую другую папку:
+mv papka1/lesson4.json papka2/lesson4.json
+mv papka1/lesson5.json papka2/lesson5.json
+14)Скопировать любые 2 файла, которые вы создали, в любую другую папку:
+cp papka1/lesson1.txt papka2/lesson1.txt
+cp papka1/lesson2.txt papka2/lesson2.txt
+15) Найти файл по имени:
+find . - iname'*les*'
+16)Просмотреть содержимое в реальном времени (команда grep) изучите как она работает:
+tail -f lesson1.txt | grep age lesson1.txt
+17) вывести несколько первых строк из текстового файла:
+head-n3 papka1/lesson1.txt
+18)Вывести несколько последних строк из текстового файла:
+tail -n3 papka1/lesson1.txt 
+19)Просмотреть содержимое длинного файла (команда less) изучите как она работает.
+less papka1/lesson2.txt
+20)Вывести дату и время:
+date
+Задание *
+1) Отправить http запрос на сервер.
+http://162.55.220.72:5006/terminal-hw-request:
+curl 'http://162.55.220.72:5006/terminal-hw-request'
+
