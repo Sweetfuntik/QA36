@@ -18,7 +18,7 @@ ls -la
 9) + Открыть любой txt файл:
 cat > 'название файла'
 10) + написать туда что-нибудь, любой текст:
-cat >lesson1.txt 
+cat > lesson1.txt 
 name: Vladimir
 age: 38
 salary: 500 y.e
